@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:black;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 59px;
+    font-weight: 700;
+    color: whitesmoke;
+    line-height: 1;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: wheat;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 50px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: whitesmoke;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: whitesmoke;
+}
+
+.btn-box a:hover {
+    text-decoration: underline;
+}
