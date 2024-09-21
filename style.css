@@ -114,7 +114,7 @@ body {
 }
 
 .btn-box a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .about {
@@ -158,9 +158,8 @@ body {
     width: 15rem;
 }
 
-/* General styling for the project section */
 .projects {
-    margin-top: 500px;
+    margin-top: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,6 +194,83 @@ body {
     border-radius: 10px; 
     transition: transform 0.3s ease;
 }
+.video1 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video1:hover {
+    transform: scale(1.05); 
+}
+.video2 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video2:hover {
+    transform: scale(1.05); 
+}
+
+.video3 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video3:hover {
+    transform: scale(1.05); 
+}
+
+.video4 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video4:hover {
+    transform: scale(1.05); 
+}
+
+.video5 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video5:hover {
+    transform: scale(1.05); 
+}
+
+.video6 {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.video6:hover {
+    transform: scale(1.05); 
+}
+
 
 .project-grid img:hover {
     transform: scale(1.05); 
