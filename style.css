@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: black;
+    background:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,6 +118,7 @@ body {
 }
 
 .about {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,9 +174,10 @@ body {
 }
 
 .projects-content p {
-    margin: 20px 0 50px;
-    font-size: 1.2rem;
+    margin: 20px 0 100px;
+    font-size: 16;
     line-height: 1.6;
+
 }
 
 .project-grid {
@@ -299,5 +301,227 @@ body {
     }
 }
 
+.education {
+    max-width: 1000px;
+    margin: 400px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.heading span {
+    color: #7e57c2;
+}
+
+.education-content {
+    margin-bottom: 100px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #39266d;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: -6%;
+}
+
+.timeline-item.right {
+    left: 56%;
+}
+
+.timeline-item.left .timeline-date,
+.timeline-item.right .timeline-date {
+    position: absolute;
+    top: -10px;
+    width: 250px;
+    background-color: #3498db;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.timeline-item.left .timeline-date:hover {
+    transform: scale(1.05);
+}
+.timeline-item.right .timeline-date:hover {
+    transform: scale(1.05);
+}
 
 
+.timeline-item.left .timeline-date {
+    right: -80px;
+}
+
+.timeline-item.right .timeline-date {
+    left: -80px;
+}
+
+.timeline-content {
+    background-color: rgb(21, 18, 18);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.timeline-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .timeline:before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-item.left .timeline-date,
+    .timeline-item.right .timeline-date {
+        left: 0;
+        right: auto;
+    }
+
+    .timeline-item.left .timeline-date {
+        transform: translateX(0);
+    }
+
+    .timeline-item.right .timeline-date {
+        transform: translateX(0);
+    }
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center; 
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    gap: 50px;
+    align-items: flex-start;
+    background-color:#222;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 40%;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#7e57c2;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #c0b0dc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-details {
+    margin-top: 60px; 
+    text-align: center; 
+}
+
+.contact-details p {
+    margin: 15px 0; 
+    font-size: 16px; 
+    color: white;
+}
+
+
+.contact-form {
+    flex: 1;
+    max-width: 20%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #222; 
+    border-radius: 8px; 
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 60px;
+}
+
+button {
+    padding: 10px;
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5e3da1;
+}
