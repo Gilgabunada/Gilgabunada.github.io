@@ -12,15 +12,15 @@
         <a href="#" class="logo">Gil.</a>
 
         <nav class ="navbar">
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">Projects</a>
-            <a href="#">Education</a>
-            <a href="#">Contact </a>
+            <a href="#home" id="home-nav">Home</a>
+            <a href="#about" id="about-nav">About Me</a>
+            <a href="#projects" id="projects-nav">Projects</a>
+            <a href="#education" id="education-nav">Education</a>
+            <a href="#contact" id="contact-nav">Contact</a>
         </nav>
     </header>
     
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, Im Gil Gabunada</h1>
             
@@ -33,8 +33,8 @@
             </p>
             
             <div class="btn-box">
-                <a href="#">Support</a>
-                <a href="#">Let's Talk</a>
+                <a href="https://github.com/recyclebin12331" target="_blank">Support</a> 
+                <a href="#contact">Let's Talk</a>
             </div>
         </div>
         <img src="images/gil.png" class="image" alt="image">
@@ -48,7 +48,7 @@
         </div>
 
         <div class="about-content">
-            <h3> Computer Engineering Student</h3>
+            <h3>Gil Gabunada</h3>
             <p>Hi! I'm Gil Gabunada, a Computer Engineering student at the University of Cebu Main Campus. Living in the vibrant city of Cebu, 
                 I’m passionate about developing tech solutions that can positively impact people's lives. My journey in engineering combines 
                 both hardware and software, and I love working on projects that challenge me to innovate—from robotics to automation systems.
@@ -59,9 +59,19 @@
                 Feel free to explore my portfolio, where you’ll find a collection of my projects, achievements, and aspirations. 
                 I hope that my journey can inspire someone to follow their passion in tech, just as I’m pursuing mine.</p>
 
-            <div class="btn-box btns">
-                <a href="#" class="hre">Read More</a>
-            </div>
+                <div class="more-content" style="display: none;">
+                    <p>In addition to my academic pursuits, I actively seek opportunities to expand my knowledge outside the classroom. I regularly attend workshops and seminars related to emerging technologies, such as artificial intelligence and the Internet of Things (IoT). These learning experiences inspire me to integrate new ideas into my projects and keep pace with the rapidly evolving tech landscape.
+
+                        My interest in hardware has led me to explore areas such as microcontroller programming and circuit design. I enjoy working with tools like Arduino and Raspberry Pi, which allow me to create prototypes that bring my ideas to life. Whether it's building a simple robot or developing a home automation system, I find joy in transforming concepts into tangible solutions.
+                        
+                        As I look to the future, I am excited about the endless possibilities within the field of computer engineering. I am eager to contribute to projects that leverage technology for social good, focusing on sustainability and accessibility. My goal is to become a well-rounded engineer who not only excels in technical skills but also understands the broader impact of technology on society.
+                        
+                        Thank you for taking the time to learn more about me. I invite you to explore my projects and connect with me to discuss ideas, collaborations, or any questions you may have!</p>
+                </div>
+                
+                <div class="btn-box btns">
+                    <a href="#" id="readMoreBtn" class="hre">Read More</a>
+                </div>
         </div>
 
     </section>
@@ -211,7 +221,7 @@
         </div>
     </section>
 
-    <div class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-info">
             <h2>Contact</h2>
             <p>Got a question or idea? Let’s connect! Whether it’s about my projects or a potential collaboration, I’m always open to discussions. 
@@ -221,7 +231,7 @@
             <div class="contact-details">
                 <p><i class="fas fa-phone"></i> Phone: +256-125-7865</p>
                 <p><i class="fas fa-map-marker-alt"></i> Address: Brgy. Kalubihan Colon St. Cebu city</p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="#">recyclebin1233@gmail.com</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="#">gilgabunada@gmail.com</a></p>
             </div>
         </div>
         <div class="contact-form">
@@ -245,7 +255,7 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </div>      
+    </section>      
 
     <script src="script.js"></script>
 </body>

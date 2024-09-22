@@ -41,8 +41,21 @@ body {
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
 }
+
+.navbar a.active {
+    transform: scale(1.05);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px; 
+}
+
 
 .home {
     height: 100vh;
@@ -142,7 +155,7 @@ body {
 }
 
 .about-content {
-    max-width: 1000px; 
+    max-width: 10000px; 
     text-align: center; 
 }
 
@@ -303,7 +316,7 @@ body {
 
 .education {
     max-width: 1000px;
-    margin: 400px auto;
+    margin: 200px auto;
     padding: 0 20px;
     text-align: center;
 }
@@ -428,15 +441,18 @@ body {
 }
 
 .contact-section {
+    margin-top:px;
     display: flex;
     justify-content: center; 
-    padding: 40px;
+    padding: 50px;
     font-family: Arial, sans-serif;
     gap: 50px;
     align-items: flex-start;
     background-color:#222;
 }
-
+.navbar a.active {
+    text-decoration: underline; 
+}
 .contact-info {
     flex: 1;
     max-width: 40%;
@@ -524,4 +540,5 @@ button {
 
 button:hover {
     background-color: #5e3da1;
+}
 }
