@@ -1,4 +1,3 @@
-document.querySelector('.video-background video').playbackRate = 0.8; // Adjust to desired speed
 
 const videos = document.querySelectorAll('video');
 
@@ -38,7 +37,7 @@ window.addEventListener('scroll', () => {
 
 
 document.getElementById('readMoreBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
+    event.preventDefault(); 
     const moreContent = document.querySelector('.more-content');
     
     if (moreContent.style.display === 'none' || moreContent.style.display === '') {
@@ -49,4 +48,15 @@ document.getElementById('readMoreBtn').addEventListener('click', function(event)
         this.textContent = 'Read More'; // Change link text back
     }
 });
+
+const projectItems = document.querySelectorAll('.grid-item');
+
+// Define the heights for different items (1 = 150px, 2 = 300px)
+const heights = [1, 1, 2, 1, 2, 1]; 
+
+projectItems.forEach((item, index) => {
+    item.style.gridRowEnd = `span ${heights[index]}`; // Adjust row span based on defined heights
+});
+
+
 
