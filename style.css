@@ -19,6 +19,7 @@ body {
     height: 100%;
     z-index: -1; /* Ensure the video stays behind all content */
     overflow: hidden;
+    object-fit: cover;
 }
 
 .video-background video {
