@@ -1,3 +1,4 @@
+document.querySelector('.video-background video').playbackRate = 0.8; // Adjust to desired speed
 
 const videos = document.querySelectorAll('video');
 

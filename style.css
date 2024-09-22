@@ -8,16 +8,50 @@
 }
 
 body {
-    background:black;
     color: white;
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video stays behind all content */
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(100%); /* Further reduce brightness for a subtle look */
+}
+
+/* Optional overlay for further dimming effect */
+.video-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: .2vw 10%;
     background:black;
     display: flex;
     justify-content: space-between;
@@ -26,7 +60,7 @@ body {
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 3vw;
     color: white;
     font-weight: 600;
     text-decoration: none;
@@ -37,7 +71,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 2vw;
 }
 
 .navbar a:hover {
@@ -53,7 +87,7 @@ html {
 }
 
 section {
-    scroll-margin-top: 100px; 
+    scroll-margin-top: 10vw; 
 }
 
 
@@ -65,32 +99,33 @@ section {
     padding: 0 10%;
 }
 
+.home-content {
+    max-width: 80vw;
+}
+
 .image {
-    width: 500px;
-    height: 500px;
+    width: 80vw;
+    max-width: 25vw;
     border-radius: 50%;
 }
 
-.home-content {
-    max-width: 800px;
-}
 
 .home-content h1 {
-    font-size: 59px;
+    font-size: 3.5vw;
     font-weight: 700;
     color: whitesmoke;
     line-height: 1;
 }
 
 .home-content h3 {
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 700;
     color: wheat;
 }
 
 .home-content p {
-    font-size: 16px;
-    margin: 20px 0 50px;
+    font-size: 0.8vw;
+    margin: 20px 10px 30px;
 }
 
 .home-content .btn-box {
@@ -144,18 +179,18 @@ section {
     text-align: center;
 }
 .about-img {
-    margin: 50px 0; 
+    margin: 1vw 0; 
 }
 
 .about-img img {
     width: 100%;
-    max-width: 400px; 
+    max-width: 20vw; 
     height: auto; 
     border-radius: 50%; 
 }
 
 .about-content {
-    max-width: 10000px; 
+    max-width: 150vw; 
     text-align: center; 
 }
 
@@ -411,6 +446,7 @@ section {
 
 
 @media screen and (max-width: 768px) {
+    
     .timeline:before {
         left: 20px;
     }
@@ -498,47 +534,47 @@ section {
     background-color: #222; 
     border-radius: 8px; 
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 
-.form-group {
-    margin-bottom: 15px;
-}
+    .form-group {
+        margin-bottom: 15px;
+    }
 
-label {
-    margin-bottom: 6px;
-    font-weight: bold;
-    display: inline-block;
-    font-size: 14px;
-}
+    label {
+        margin-bottom: 6px;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 14px;
+    }
 
-input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 14px;
-    box-sizing: border-box;
-}
+    input, textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
 
-textarea {
-    height: 60px;
-}
+    textarea {
+        height: 60px;
+    }
 
-button {
-    padding: 10px;
-    background-color: #7e57c2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
+    button {
+        padding: 10px;
+        background-color: #7e57c2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
 
-button:hover {
-    background-color: #5e3da1;
-}
+    button:hover {
+        background-color: #5e3da1;
+    }
 }
