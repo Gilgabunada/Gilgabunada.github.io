@@ -83,14 +83,7 @@ section {
 }
 
 .icons a:nth-child(3) i {
-    color: #FF0000;
-}
-
-.icons a:nth-child(4) i {
-    color: #1DA1F2; /* Twitter/X blue */
-}
-.icons a:nth-child(5) i {
-    color: white; /* Twitter/X blue */
+    color: white;
 }
 
 .icons i:hover {
