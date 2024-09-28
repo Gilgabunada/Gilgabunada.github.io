@@ -1,3 +1,4 @@
+/* General Reset */
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
 
 * {
@@ -8,170 +9,128 @@
 }
 
 body {
-    background: #141619;
+    background: black;
     color: white;
 }
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: .2vw 10%;
-    background:black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 3vw;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.navbar a {
-    font-size: .9vw;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2vw;
-
-}
-
 
 html {
     scroll-behavior: smooth;
 }
 
 section {
-    scroll-margin-top: 6vw; 
+    scroll-margin-top: 6vw;
 }
 
-
+.heading span {
+    color: rgb(52, 95, 212);
+}
+/* Home Section */
 .home {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 10%;
 }
 
-.home-content {
-    max-width: 80vw;
-}
-
-.image {
-    width: 80vw;
-    max-width: 25vw;
-    border-radius: 50%;
-}
-
-
 .home-content h1 {
-    font-size: 3.5vw;
+    margin: -10vw 0 2vw 17vw;
+    margin-bottom: -.5vw;
+    font-size: 5vw;
     font-weight: 700;
     color: whitesmoke;
-    line-height: 1;
+    text-align: center;
+}
+
+.home-content h1 span {
+    color: rgb(52, 95, 212);
 }
 
 .home-content h3 {
+    margin-left: 17vw;
     font-size: 2vw;
     font-weight: 700;
-    color: #0A21C0;
+    color: #C5C6C7;
 }
 
 .home-content p {
+    margin-left: 17vw;
     font-size: 0.8vw;
-    margin: 1vw 0px 1.5vw;
     width: 50vw;
 }
 
-.home-content .btn-box {
+.icons {
+    margin-left: 17vw;
     display: flex;
-    justify-content: space-between;
-    width: 18vw;
-    height: 2.5vw;
+    gap: 1vw;
+    margin-top: 1vw;
 }
 
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 8vw;
-    height: 100%;
-    background: lightblue;
-    border: .1vw solid lightblue;
-    border-radius: .4vw;
-    font-size: .9vw;
+.icons a {
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
 }
 
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: whitesmoke;
+.icons i {
+    font-size: 2vw;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-box a:nth-child(1) {
-    background: transparent;
-    color: whitesmoke;
+.icons a:nth-child(1) i {
+    color: #3b5998;
 }
 
-.btn-box a:hover {
+.icons a:nth-child(2) i {
+    color: #333;
+}
+
+.icons a:nth-child(3) i {
+    color: #FF0000;
+}
+
+.icons i:hover {
     transform: scale(1.1);
 }
 
-.about {
-    margin-top: 100px;
+/* About Section */
+.about-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 50px 10%; 
-    text-align: center; 
+    justify-content: space-between;
+    padding: 1vw;
+    max-width: 80vw;
+    margin: 0 auto;
 }
-.about .heading {
-    font-size: 2vw;
-    margin-bottom: .2vw;
-    text-align: center;
-}
+
 .about-img {
-    margin: 1vw 0; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .about-img img {
-    width: 100%;
-    max-width: 20vw; 
-    height: auto; 
-    border-radius: 50%; 
+    max-width: 80%; /* Adjust the size of the image as needed */
+    border-radius: .1vw;
 }
 
-.about-content h3 {
-    font-weight: 6vw;
-    font-size: 2vw;
+.about-content {
+    flex: 1;
+    padding: 1vw;
 }
 
 .about-content p {
-    font-size: .9vw;
-    margin: 2vw 0 3vw;
+    font-size: 0.8vw;
+    line-height: 1.8;
+    text-align: justify;
+    margin-left: 4vw;
 }
 
-.btn-box.btns {
-    display: inline-block;
-    width: -1vw;
-    height: 2vw;
-}
 
+/* Projects Section */
 .projects {
-    margin-top: 5vw;
+    margin-top: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10%; 
+    padding: 3vw 10%; 
     text-align: center;
 }
 
@@ -280,8 +239,6 @@ section {
 }
 
 
-
-
 /* You can adjust the grid-row spans for specific items as necessary */
 @media (max-width: 768px) {
     .project-grid {
@@ -294,32 +251,24 @@ section {
         grid-template-columns: 1fr; /* Single column for mobile */
     }
 }
-
+/* Education Section */
 .education {
     max-width: 50vw;
     margin: 10vw auto;
-    padding: 0 20px;
     text-align: center;
 }
 
 .education .heading {
     font-size: 2vw;
-    margin-bottom: .2vw;
-    text-align: center;
-}
-  
-
-.heading span {
-    color: #0A21C0;
 }
 
 .education-content p {
-    text-align: center;
-    margin: 2vw 0 4vw;
-    font-size: .8vw;
+    font-size: 0.8vw;
     line-height: 1.6;
+    margin: 2vw 0 4vw;
 }
 
+/* Timeline */
 .timeline {
     position: relative;
     padding: 5vw 0;
@@ -346,11 +295,11 @@ section {
 }
 
 .timeline-item.left {
-    left: -6%;
+    left: -5.7%;
 }
 
 .timeline-item.right {
-    left: 56%;
+    left: 55.7%;
 }
 
 .timeline-item.left .timeline-date,
@@ -422,109 +371,5 @@ section {
 
     .timeline-item.right .timeline-date {
         transform: translateX(0);
-    }
-}
-
-.contact-section {
-    display: flex;
-    justify-content: center; 
-    padding: 2vw;
-    font-family: Arial, sans-serif;
-    gap: 2vw;
-    align-items: flex-start;
-    background-color:#222;
-}
-.navbar a.active {
-    text-decoration: underline; 
-}
-.contact-info {
-    flex: 1;
-    max-width: 40vw;
-}
-
-.contact-info h2 {
-    font-size: 2vw;
-    margin-bottom: 1vw;
-    color: #0A21C0;
-}
-
-.contact-info p {
-    font-size: .7vw;
-    line-height: 1.6;
-}
-
-.contact-info a {
-    color: #0A21C0;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.contact-details {
-    margin-top: 2vw; 
-    text-align: center; 
-}
-
-.contact-details p {
-    margin: .9vw 0; 
-    font-size: .7vw; 
-    color: white;
-}
-
-
-.contact-form {
-    flex: 1;
-    max-width: 19vw; 
-    margin:1vw auto; 
-    background-color: #222; 
-    border-radius: .1vw; 
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group {
-        margin-bottom: .3vw;
-    }
-
-    label {
-        margin-bottom: .1vw;
-        font-weight: bold;
-        display: inline-block;
-        font-size: .7vw;
-    }
-
-    input, textarea {
-        padding: .3vw; /* Use fixed units instead of viewport-based units */
-        border-radius: .4vw;
-        width: 19vw;
-        font-size: .6vw; /* Fixed font size */
-        box-sizing: border-box;
-        position: relative;
-        resize: none; /* Prevents resizing */
-    }
-    
-    
-
-    textarea {
-        height: 2vw;
-    }
-
-    button {
-        padding: .4vw;
-        background-color: #0A21C0;
-        color: white;
-        border: none;
-        border-radius: .3vw;
-        cursor: pointer;
-        font-size: .7vw;
-        transition: background-color 0.3s;
-    }
-
-    button:hover {
-        transform: scale(1.02);
     }
 }
