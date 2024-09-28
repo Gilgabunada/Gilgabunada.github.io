@@ -86,6 +86,13 @@ section {
     color: #FF0000;
 }
 
+.icons a:nth-child(4) i {
+    color: #1DA1F2; /* Twitter/X blue */
+}
+.icons a:nth-child(5) i {
+    color: white; /* Twitter/X blue */
+}
+
 .icons i:hover {
     transform: scale(1.1);
 }
