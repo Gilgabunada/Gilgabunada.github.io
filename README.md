@@ -1,8 +1,6 @@
-# Gil Gabunada's Portfolio
+# [Gil Gabunada's Portfolio](https://gilgabunada.github.io/)
 
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences as a Computer Engineering student.
-
-Check out my portfolio live at: [Gil Gabunada](https://recyclebin12331.github.io/)
 
 ## 📁 Features
 - **Projects**: Explore my latest projects, including descriptions and technologies used.
