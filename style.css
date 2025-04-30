@@ -238,6 +238,40 @@ section {
     margin-top: -4vw;
 }
 
+.media-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+.media-wrapper img,
+.media-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Overlay should be hidden initially */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* dark overlay */
+    color: #fff;
+    width: 100%;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 0.8vw;
+    opacity: 0; /* Make it invisible initially */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When hovering over the .media-wrapper, show the overlay */
+.media-wrapper:hover .overlay {
+    opacity: 1; /* Make the overlay visible */
+}
+
+
 
 /* You can adjust the grid-row spans for specific items as necessary */
 @media (max-width: 768px) {
