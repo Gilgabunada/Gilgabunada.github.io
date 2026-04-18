@@ -1,0 +1,231 @@
+{
+    "profile": {
+    "firstName": "Gil",
+    "lastName": "Gabunada",
+    "role": "A Computer Engineering Student",
+    "homeDescription": "I am currently pursuing a Bachelor of Science in Computer Engineering and using this platform to showcase my projects, achievements, and experiences. Through my work, I aim to inspire others to consider a career in this dynamic field and highlight the innovative potential of computer engineering",
+    "aboutText": "Hi! I'm Gil Gabunada, a Computer Engineering student at the University of Cebu Main Campus. Living in the vibrant city of Cebu, I’m passionate about developing tech solutions that can positively impact people's lives. My journey in engineering combines both hardware and software, and I love working on projects that challenge me to innovate—from robotics to automation systems. For me, engineering goes beyond creating technology; it’s about driving meaningful change. Through my work and experiences, I aim to inspire others to explore the field of engineering and push the boundaries of what’s possible. Feel free to explore my portfolio, where you’ll find a collection of my projects, achievements, and aspirations. I hope that my journey can inspire someone to follow their passion in tech, just as I’m pursuing mine.",
+    "projectsIntro": "I'm passionate about exploring various domains within computer engineering, particularly in hardware development and integration. Below is a collection of my hardware-focused projects loaded dynamically via JSON.",
+    "educationIntro": "Throughout my time studying Computer Engineering at the University of Cebu Main Campus, I've completed courses that have shaped my skills and knowledge."
+  },
+  "projects": [
+    {
+      "id": 1,
+      "type": "image",
+      "src": "images/image1.jpg",
+      "description": "My 1st ever Arduino Uno"
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "src": "images/image3.jpg",
+      "description": "My first Sumobot was powered by an Arduino Uno and used five sensors, Three ultrasonic sensors and two IR sensors. It was built using Sintra board."
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "src": "images/image4.jpg",
+      "description": "Network Cabling Activity, Three different types of Termination Straight-Through, Crossover, and Rollover/Console"
+    },
+    {
+      "id": 4,
+      "type": "image",
+      "src": "images/image5.jpg",
+      "description": "This project involved designing and fabricating a custom PCB to interface a DHT sensor with a 16x2 LCD display for real-time temperature and humidity monitoring."
+    },
+    {
+      "id": 5,
+      "type": "image",
+      "src": "images/image6.jpg",
+      "description": "This was my first project using an Arduino UNO. It’s a doorbell system equipped with a Bluetooth module that sends a notification to a nearby cellphone in case the bell is not heard."
+    },
+    {
+      "id": 6,
+      "type": "video",
+      "src": "video/video3.mp4",
+      "description": "It was a personal project where I built a counter using 7-segment displays powered by an Arduino Uno."
+    },
+    {
+      "id": 7,
+      "type": "image",
+      "src": "images/image7.jpg",
+      "description": "I worked on a project where I sent messages to a Bluetooth module and displayed them on a 16x2 LCD display"
+    },
+    {
+      "id": 8,
+      "type": "video",
+      "src": "video/video1.mp4",
+      "description": "Three types of LED signals activated by claps, using a sound sensor. I triggered the mic by Tapping because I had set the threshold too high."
+    },
+    {
+      "id": 9,
+      "type": "image",
+      "src": "images/image10.jpg",
+      "description": "This was my second Sumobot build, powered by 6 N20 12V motors and controlled by an Arduino Nano. It uses an L298N motor driver and is equipped with 5 sensors, 2 ultrasonic sensors at the front, 1 at the back, and 2 IR sensors underneath. It was also my first competition outside the university."
+    },
+    {
+      "id": 10,
+      "type": "image",
+      "src": "images/image12.jpg",
+      "description": "This is the final design of the Clap Sensor, featuring the custom PCB I designed."
+    },
+    {
+      "id": 11,
+      "type": "video",
+      "src": "video/video2.mp4",
+      "description": "3d design of the Clap Sensor using EasyEda to layout the schematic diagram and pcb"
+    },
+    {
+      "id": 12,
+      "type": "image",
+      "src": "images/image22.jpg",
+      "description": "This is the wiring I used for the Electronic Trainer's Potentiometer."
+    },
+    {
+      "id": 13,
+      "type": "video",
+      "src": "video/video5.mp4",
+      "description": "I'm prototyping my pull-down resistor logic switches on a  breadboard before implementing them into the Digital and Analog Trainer."
+    },
+    {
+      "id": 14,
+      "type": "image",
+      "src": "images/image23.jpg",
+      "description": "My unfinish Digital and Analog Trainer."
+    },
+    {
+      "id": 15,
+      "type": "image",
+      "src": "images/image24.jpg",
+      "description": "This is the initial messy wiring of my Digital and Analog Trainer, including logic switches, logic output, and power supply."
+    },
+    {
+      "id": 16,
+      "type": "video",
+      "src": "video/video4.mp4",
+      "description": "This was our attempt to join the INROF competition, but unfortunately, we failed miserably."
+    },
+    {
+      "id": 17,
+      "type": "video",
+      "src": "video/video6.mp4",
+      "description": "This is the final look and functionality of my Digital and Analog Trainer. It features a variable power supply, buzzer, speaker, 3 breadboards, volt and amp meters,  digital-to-analog conversion, and a PWM controller."
+    }
+  ],
+  "education": [
+    {
+      "year": "First Year",
+      "semester": "1st Semester",
+      "alignment": "left",
+      "courses": [
+        "College Mathematics",
+        "Mathematics in the Modern World",
+        "Pre-Calculus",
+        "General Chemistry",
+        "General Physics",
+        "Computer Engineering as a Discipline",
+        "Programming Logic and Design 1"
+      ]
+    },
+    {
+      "year": "First Year",
+      "semester": "2nd Semester",
+      "alignment": "right",
+      "courses": [
+        "Calculus 1",
+        "Engineering Drawing",
+        "Programming Logic and Design 2",
+        "Chemistry for Engineers"
+      ]
+    },
+    {
+      "year": "First Year",
+      "semester": "Summer",
+      "alignment": "left",
+      "courses": [
+        "Calculus 2",
+        "Computer-Aided Drafting",
+        "Physics for Engineers"
+      ]
+    },
+    {
+      "year": "Second Year",
+      "semester": "1st Semester",
+      "alignment": "right",
+      "courses": [
+        "Differential Equations",
+        "Engineering Economics",
+        "Fundamental of Electrical Circuits",
+        "Object Oriented Programming",
+        "Cisco Certified Network Associate 1"
+      ]
+    },
+    {
+      "year": "Second Year",
+      "semester": "2nd Semester",
+      "alignment": "left",
+      "courses": [
+        "Engineering Data Analyisis",
+        "Numerical Methods",
+        "Fundamental of Electronic Circuits",
+        "Data Structures and Algorithms",
+        "Cisco Cirtified Network Associate 2"
+      ]
+    },
+    {
+      "year": "Third Year",
+      "semester": "1st Semester",
+      "alignment": "right",
+      "courses": [
+        "Discrete Mathematics",
+        "Static of Rigid Bodies",
+        "Logic Circuit and Design",
+        "Operating System",
+        "Software Design",
+        "Computer Engineering Drafting and Design",
+        "Data and Digital Communication",
+        "Cisco Cirtified Network Associate 3"
+      ]
+    },
+    {
+      "year": "Third Year",
+      "semester": "2nd Semester",
+      "alignment": "left",
+      "courses": [
+        "Feedback and Control System",
+        "Introduction to HDL",
+        "Mix Signal and Sensors",
+        "Microprossesors",
+        "Cisco Cirtified Network Associate 4 ",
+        "CpE Cognative/Elective 1"
+      ]
+    },
+    {
+      "year": "Fourth Year",
+      "semester": "1st Semester",
+      "alignment": "right",
+      "courses": [
+        "Embedded Systems",
+        "Computer Architecture and Organization",
+        "CpE Practice and Design 1",
+        "Computer Networks and Security",
+        "Digital Signal Processing",
+        "CpE Cognative/Elective 2",
+        "Enhancement Course 1"
+      ]
+    },
+    {
+      "year": "Fourth Year",
+      "semester": "2nd Semester",
+      "alignment": "left",
+      "courses": [
+        "Emerging Technologies in CpE",
+        "CpE Practice and Design 2",
+        "CpE Laws and Professional Practice",
+        "system Analysis and Design",
+        "CpE Cognative/Elective 3",
+        "Enhancement Course 2"
+      ]
+    }
+  ]
+}
